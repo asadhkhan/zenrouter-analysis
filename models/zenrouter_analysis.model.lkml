@@ -64,3 +64,11 @@ explore: online_offline_analysis{
     type: left_outer # Could be excluded since left_outer is the default
   }
 }
+
+explore: routing_detail_short {
+  join: routing_detail {
+    sql_on: ${routing_detail_short.ticket_number} = ${routing_detail.ticket_number}  ;;
+    relationship: one_to_one
+    type: left_outer # Could be excluded since left_outer is the default
+  }
+}
