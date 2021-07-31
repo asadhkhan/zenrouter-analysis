@@ -1,4 +1,4 @@
-view: vw_routing_detail {
+view: routing_details {
   sql_table_name: `zenrouter.zenrouter.vw_routing_detail`
     ;;
 
